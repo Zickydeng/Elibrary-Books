@@ -1,70 +1,28 @@
-# Getting Started with Create React App
+_Elibrary-tool Search the open library api/google api for books
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## About
+While building Elibrary, I wanted to write only one 'stateful' class component connected to a Redux store and as many additional 'dumb' components as needed for the React front end. I wanted to keep my code as organized as possible by breaking down components and extracting utility functions into a separate file. One side effect of having just the single stateful component meant that I ended up with a lot of conditional rendering using ternary operators for things that could also have been accomplished with React Router. I ran into a few issues with Open Library API and inconsistent in data formatting, hence the use of google apis for  back-ups where open library felt short. Overall, I had a lot of fun building Elibrary and looking to improve it more in the near future, hope you enjoy walking through it.
 
-## Available Scripts
+### Wish-List Features
 
-In the project directory, you can run:
+Due to time constraints, there were a few features that I was unable to implement in Elibrary. Further work will add more functionalities to this app and will include:
 
-### `npm start`
+- [ ] Mkaing the filters buttons functional
+- [ ] Add additional filters and book details
+- [ ] Add a nice back ground image
+- [ ] Make it more accessible, by even adding audio-texts
+- [ ] Refactor to use React Router
+- [ ] Add a "Search by Author" option
+- [ ] Paginate search results
+- [ ] Write tests, especially for Express routes
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+#### some of Technicals 
+I spend two days working on  this assignment, as mention above those are features I will love to add on this app.
+The latest react styling feature are onscroll and onfocus; used in the search-box. I could have used it extensively however, I didn't have enough time to do so.
+API performances can be tracked using datadog platform. I have not had an opportunity to track an api performance issues in a production environment however, this is something I would love to do in order to improve the general app performance.
+There is need to harmonice the fetch data,I came accross lot of inconsistencies in terms of isbn,covers etc.
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
 
-### `npm test`
+## Built With
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Elibrary was built using HTML, CSS, React, Redux, Node, emotion-ui, the Open Library and google APIs.

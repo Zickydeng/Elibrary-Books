@@ -1,5 +1,5 @@
 _Elibrary-tool Search the open library api/google api for books
-### [Elibrary](https://elibrary-books-tool.herokuapp.com/)
+#### [Elibrary](https://elibrary-books-tool.herokuapp.com/)
 
 ## About
 While building Elibrary, I wanted to write only one 'stateful' class component connected to a Redux store and as many additional 'dumb' components as needed for the React front end. I wanted to keep my code as organized as possible by breaking down components and extracting utility functions into a separate file. Howevevr, the down side of having just the single stateful component is that I ended up with a lot of conditional rendering using ternary operators for things that could also have been accomplished with React Router. More so, I ran into a few issues with Open Library API and inconsistent in data formatting, hence the use of google apis for  back-ups where open library felt short. Overall, I had a lot of fun building Elibrary and looking to improve it more in the near future, hope you enjoy walking through it.
